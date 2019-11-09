@@ -18,5 +18,6 @@ def remove_strawberry(contacts)
   contacts.delete_if do |memo, (key, value)|
     if memo == "Freddy Mercury"
       binding.pry
+    end
   end
 end
