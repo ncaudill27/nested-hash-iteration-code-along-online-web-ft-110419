@@ -15,5 +15,7 @@ require 'pry'
   # }
   
 def remove_strawberry(contacts)
-  contacts.delete_if 
+  contacts.delete_if do |memo, (key, value)|
+    binding.pry
+  end
 end
