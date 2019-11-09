@@ -17,7 +17,9 @@ require 'pry'
 def remove_strawberry(contacts)
   contacts.delete_if do |memo, key|
     if memo == "Freddy Mercury"
-      key.each { |value| binding.pry }#value == "strawberry" }
+      if key == :favorite_ice_cream_flavors
+        key.each { |value| binding.pry }#value == "strawberry" }
+      end
     end
   end
 end
